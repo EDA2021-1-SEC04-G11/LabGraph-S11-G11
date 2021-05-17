@@ -44,7 +44,7 @@ operación seleccionada.
 # ___________________________________________________
 
 
-servicefile = 'bus_routes_14000.csv'
+servicefile = 'bus_routes_3000.csv'
 initialStation = None
 
 # ___________________________________________________
@@ -120,9 +120,11 @@ def thread_cycle():
     while True:
         printMenu()
         inputs = input('Seleccione una opción para continuar\n>')
+        
 
         if int(inputs[0]) == 1:
             print("\nInicializando....")
+            print('El limite de recursion actual: ' + str(sys.getrecursionlimit()))
             # cont es el controlador que se usará de acá en adelante
             cont = controller.init()
 
