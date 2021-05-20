@@ -90,7 +90,7 @@ def optionFive(cont, destStation):
     haspath = controller.hasPath(cont, destStation)
     print('Hay camino entre la estación base : ' +
           'y la estación: ' + destStation + ': ')
-    print(haspath)
+    
 
 
 def optionSix(cont, destStation):
